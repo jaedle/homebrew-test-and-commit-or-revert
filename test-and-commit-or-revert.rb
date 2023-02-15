@@ -5,42 +5,42 @@
 class TestAndCommitOrRevert < Formula
   desc ""
   homepage "https://github.com/jaedle/homebrew-test-and-commit-or-revert"
-  version "0.1.1"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.1/test-and-commit-or-revert_Darwin_arm64.tar.gz"
-      sha256 "9f49eb3816407241aeef4a1a7af982c18539ce014546a17d5c226534416682fa"
+      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.3/tcr_Darwin_arm64.tar.gz"
+      sha256 "9cd99e982fdfedfd731dc65bc46009c66c02e4f33369296e80fe83e789f3f91c"
 
       def install
-        bin.install "test-and-commit-or-revert"
+        bin.install "tcr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.1/test-and-commit-or-revert_Darwin_x86_64.tar.gz"
-      sha256 "05a1734592951e1221961cdd064f7e48b461266b1286a6efeb05cd2ad96d8541"
+      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.3/tcr_Darwin_x86_64.tar.gz"
+      sha256 "e542a7ecf46ce3ca85d5c5416f061814d8ddd37a7a2b8fc6aaecb4d21f137131"
 
       def install
-        bin.install "test-and-commit-or-revert"
+        bin.install "tcr"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.1/test-and-commit-or-revert_Linux_arm64.tar.gz"
-      sha256 "7e4b365f74c7d990c4732ca85193c04140e70fc48d544fa2a1eab79d6c804dc5"
+      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.3/tcr_Linux_arm64.tar.gz"
+      sha256 "10570e1a454e1b3cc84f4d78bb67d9a9f8c8efb1180ccb5f1e154f82504b3e15"
 
       def install
-        bin.install "test-and-commit-or-revert"
+        bin.install "tcr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.1/test-and-commit-or-revert_Linux_x86_64.tar.gz"
-      sha256 "b13ee7e5b815d0e547989720f0bdd8d29fe4cb99944c371e3b2f3ddd18b4bfed"
+      url "https://github.com/jaedle/test-and-commit-or-revert/releases/download/v0.1.3/tcr_Linux_x86_64.tar.gz"
+      sha256 "f73f1e1d8509db9aedfab8fe1ac5f14f2eb525f4868bee4ac76c4dc43c0f3939"
 
       def install
-        bin.install "test-and-commit-or-revert"
+        bin.install "tcr"
       end
     end
   end
